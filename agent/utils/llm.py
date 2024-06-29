@@ -8,7 +8,8 @@ from agent.utils.llmExpends.gpt35 import GPT35Caller
 # TODO: make the LLMCaller more general
 choices = {
     'gpt-4': GPT4Caller,
-    'gpt-3.5': GPT35Caller
+    'gpt-3.5': GPT35Caller,
+    'qwen-2-72b': Qwen2_72bCaller
 }
 
 def get_caller(model: str) -> BasicCaller:
